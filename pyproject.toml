@@ -41,7 +41,7 @@ packages = ["src/putconf"]
 packages = ["src/putconf"]
 
 [tool.hatch.version]
-source = "vcs"
+path = "src/putconf/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
