@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
@@ -41,7 +41,7 @@ packages = ["src/putconf"]
 packages = ["src/putconf"]
 
 [tool.hatch.version]
-path = "src/putconf/__about__.py"
+source = "vcs"
 
 [tool.hatch.envs.default]
 dependencies = [
