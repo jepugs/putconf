@@ -1,6 +1,6 @@
 # putconf
 
-putconf is a nice way to generate and install config files.
+putconf is a nice way to install and synchronize config files.
 
 To use putconf, you provide it a directory or git repository containing the
 config files you want to install, and it puts them in your home folder (or
