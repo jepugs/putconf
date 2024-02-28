@@ -213,6 +213,7 @@ class PutconfSource:
             while len(d) > 0 and d not in subdir_set:
                 subdir_set.add(d)
                 parents.append(d)
+                d = os.path.dirname(d)
             for p in reversed(parents):
                 self.put_subdirs.append(p)
 
@@ -324,6 +325,7 @@ class PutconfSource:
                 while len(d) > 0 and d not in subdir_set:
                     subdir_set.add(d)
                     parents.append(d)
+                    d = os.path.dirname(d)
                 for p in reversed(parents):
                     extra_dirs.append(p)
                 # handle the file/directory
